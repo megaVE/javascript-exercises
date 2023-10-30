@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 - Fundamentals</title>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <h2>1. Converting Temperature</h2>
+    <form>
+        <input type="number" name="temperature-1" id="temperature-1">
+        <select name="temperature-mu-1" id="temperature-mu-1">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <input type="submit" id="temperature-submit-1" value="Convert">
+        <p id="converted-temperature-1"></p>
+    </form>
+
+    <h2>2. Calculating BMI</h2>
+    <form>
+        <div>
+            <label for="height-2">Height: </label>
+            <input type="number" name="height-2" id="height-2">
+        </div>
+        <div>
+            <label for="weight-2">Weight: </label>
+            <input type="number" name="weight-2" id="weight-2">
+        </div>
+        <input type="submit" id="bmi-submit-2" value="Calculate">
+        <p id="calculated-bmi-2"></p>
+    </form>
+
+    <h2>3. Concatenating Strings</h2>
+    <form>
+        <div>
+            <label for="name-3">Name: </label>
+            <input type="text" name="name-3" id="name-3">
+        </div>
+        <div>
+            <label for="age-3">Age: </label>
+            <input type="number" name="age-3" id="age-3">
+        </div>
+        <div>
+            <label for="city-3">City: </label>
+            <input type="text" name="city-3" id="city-3">
+        </div>
+        <input type="submit" id="concat-submit-3" value="Submit">
+        <p id="returned-messsage-3"></p>
+    </form>
+
+    <h2>4. Calculating Area and Perimeter</h2>
+    <form>
+        <div>
+            <label for="rectangle-height-4">Height: </label>
+            <input type="number" name="rectangle-height-4" id="rectangle-height-4">
+        </div>
+        <div>
+            <label for="rectangle-width-4">Width: </label>
+            <input type="number" name="rectangle-width-4" id="rectangle-width-4">
+        </div>
+        <input type="submit" id="rectangle-submit-4" value="Calculate">
+        <p id="area-and-perimeter-4"></p>
+    </form>
+
+    <h2>5. Checking Divisibility</h2>
+    <form>
+        <input type="number" name="dividend-5" id="dividend-5">
+        <input type="number" name="divisor-5" id="divisor-5">
+        <input type="submit" id="division-submit-5" value="Check">
+        <p id="divisibility-5"></p>
+    </form>
+
+    <h2>6. Age Group Classification</h2>
+    <form>
+        <div>
+            <ul>
+                <li>Children: 0-12 years</li>
+                <li>Teenager: 13-17 years</li>
+                <li>Adult: 18-60 years</li>
+                <li>Elder: 60 years or more</li>
+            </ul>
+        </div>
+        <div>
+            <label for="age-6">Age: </label>
+            <input type="number" name="age-6" id="age-6">
+        </div>
+        <input type="submit" id="age-group-submit-6" value="Check">
+        <p id="age-group-6"></p>
+    </form>
+    
+    <h2>7. Numbers Comparison</h2>
+    <form>
+        <div>
+            <label for="number-1-7">First Number: </label>
+            <input type="number" name="number-1-7" id="number-1-7">
+        </div>
+        <div>
+            <label for="number-2-7">Second Number: </label>
+            <input type="number" name="number-2-7" id="number-2-7">
+        </div>
+        <input type="submit" id="compare-numbers-submit-7" value="Check">
+        <p id="numbers-comparison-7"></p>
+    </form>
+
+    <h2>8. Switch Calculator</h2>
+    <form>
+        <div>
+            <input type="number" name="number-1-8" id="number-1-8">
+            <select name="operation-8" id="operation-8">
+                <option value="sum">+</option>
+                <option value="subtraction">-</option>
+                <option value="times">*</option>
+                <option value="division">/</option>
+            </select>
+            <input type="number" name="number-2-8" id="number-2-8">
+        </div>
+        <input type="submit" id="calculator-submit-8" value="Calculate">
+        <p id="calculator-result-8"></p>
+    </form>
+
+    <h2>9. Fare Price</h2>
+    <form>
+        <div>
+            <ul>
+                <li>Children under 6 years: free</li>
+                <li>Students: 50% off</li>
+                <li>Elderly: 30% off</li>
+                <li>Average: no discount</li>
+            </ul>
+        </div>
+        <div>
+            <label for="age-9">Age: </label>
+            <input type="number" name="age-9" id="age-9">
+        </div>
+        <div>
+            <label for="is-student-9">Student: </label>
+            <select name="is-student-9" id="is-student-9">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+        </div>
+        <input type="submit" id="fare-submit-9" value="Calculate">
+        <p id="fare-9"></p>
+    </form>
+
+    <h2>10. Sum 1 to N</h2>
+    <form>
+        <input type="number" name="limit-10" id="limit-10">
+        <input type="submit" id="sum-submit-10" value="Calculate">
+        <p id="sum-10"></p>
+    </form>
+
+    <h2>11. Multiplication Table</h2>
+    <form>
+        <input type="number" name="number-11" id="number-11">
+        <input type="submit" id="multiplication-table-submit-11" value="Show Table">
+        <ul id="multiplication-table-11"></ul>
+    </form>
+
+    <h2>12. Prime Number</h2>
+    <form>
+        <input type="number" name="limit-12" id="limit-12">
+        <input type="submit" id="prime-submit-12" value="Generate Numbers">
+        <p id="prime-numbers-12"></p>
+    </form>
+
+    <h2>13. Pattern Showcase</h2>
+    <form>
+        <input type="number" name="limit-13" id="limit-13">
+        <input type="submit" id="pattern-submit-13" value="Generate Pattern">
+        <ul id="pattern-13"></ul>
+    </form>
+
+    <h2>14. Fibonacci</h2>
+    <form>
+        <input type="number" name="sequences-14" id="sequences-14">
+        <input type="submit" id="fibonacci-submit-14" value="Calculate">
+        <p id="fibonacci-14"></p>
+    </form>
+</body>
+</html>
