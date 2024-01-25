@@ -52,9 +52,11 @@ addingSubmit.addEventListener("click", (e) => {
 
 // // 34th Exercise
 
-// .addEventListener("click", (e) => {
-//     e.preventDefault()
-// })
+const removableParagraph = document.querySelector("#paragraph-34")
+
+removableParagraph.addEventListener("click", () => {
+    removableParagraph.remove()
+})
 
 // 35th Exercise
 

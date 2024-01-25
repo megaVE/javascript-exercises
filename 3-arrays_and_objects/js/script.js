@@ -72,25 +72,78 @@ meanSubmit.addEventListener("click", (e) => {
 
 // 27th Exercise
 
+const objectSum = {
+    firstProperty: 2,
+    secondProperty: 6,
+    thirdProperty: 9,
+}
+
+document.querySelector("#object-27").textContent = JSON.stringify(objectSum)
+
 const sumSubmit = document.querySelector("#sum-submit-27")
 
 sumSubmit.addEventListener("click", (e) => {
     e.preventDefault()
 
     const sum = document.querySelector("#sum-27")
+    
+    let objectSumValue = 0
+
+    Object.keys(objectSum).forEach(key => { objectSumValue += objectSum[key]})
+
+    sum.textContent = `The sum of the object's properties is ${objectSumValue}`
 })
 
 // 28th Exercise
+
+const objectFilter = {
+    vegetables: ["apple", "banana", "turnip"],
+    state: true,
+    counter: 9,
+    box: {},
+}
+
+document.querySelector("#object-28").textContent = JSON.stringify(objectFilter)
 
 const filterSubmit = document.querySelector("#filter-submit-28")
 
 filterSubmit.addEventListener("click", (e) => {
     e.preventDefault()
 
-    const filter = document.querySelector("#filter-28")
+    const query = document.querySelector("#query-28").value.toLowerCase()
+
+    const filtered = document.querySelector("#filtered-28")
+
+    let filteredObject = {}
+
+    if(query === ""){
+        filteredObject = objectFilter
+    } else {
+        Object.keys(objectFilter).forEach(key => {
+            if(key.includes(query)){
+                filteredObject[key] = objectFilter[key]
+            }
+        })
+    }
+    
+    filtered.textContent = JSON.stringify(filteredObject)
 })
 
 // 29th Exercise
+
+const objectUnite1 = {
+    firstProperty: "number",
+    secondProperty: "string",
+}
+
+document.querySelector("#object-1-29").textContent = JSON.stringify(objectUnite1)
+
+const objectUnite2 = {
+    thirdProperty: "float",
+    fourthProperty: "boolean",
+}
+
+document.querySelector("#object-2-29").textContent = JSON.stringify(objectUnite2)
 
 const uniteSubmit = document.querySelector("#unite-submit-29")
 
@@ -98,4 +151,8 @@ uniteSubmit.addEventListener("click", (e) => {
     e.preventDefault()
 
     const unite = document.querySelector("#unite-29")
+
+    const unitedObject = { ...objectUnite1, ...objectUnite2 }
+
+    unite.textContent = JSON.stringify(unitedObject)
 })
