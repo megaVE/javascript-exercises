@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .active { background-color: #ddd; }
+    </style>
     <script src="./js/script.js" defer></script>
 </head>
 <body>
@@ -35,7 +38,10 @@
 
     <h2>32. Changing Classes</h2>
     <form>
-        <input type="submit" id="class-submit-32" value="Change">
+        <div id="container-32">
+            <p id="content-32">Not active</p>
+            <input type="submit" id="class-submit-32" value="Change">
+        </div>
     </form>
     
     <h2>33. Adding Elements through DOM</h2>
@@ -52,10 +58,15 @@
     
     <h2>35. Filtering Items</h2>
     <form>
-        <ul id="list-35"></ul>
+        <ul id="list-35">
+            <li>Pen</li>
+            <li>Eraser</li>
+            <li>Wall</li>
+            <li>Wardrobe</li>
+            <li>Bolt</li>
+        </ul>
         <input type="text" name="element-35" id="element-35">
-        <!-- <input type="submit" id="list-add-35" value="Add"> -->
-        <!-- <input type="button" id="filter-submit-35" value="Filter"> -->
+        <input type="submit" id="filter-submit-35" value="Filter">
     </form>
 
     <h2>36. Moving Items</h2>
@@ -65,12 +76,29 @@
 
     <h2>37. Modal</h2>
     <form>
-
+        <button id="toggle-37">Hide</button>
+        <div id="modal-37">
+            <h2>Modal's title</h2>
+            <p>Modal's content</p>
+        </div>
     </form>
 
     <h2>38. Accordion</h2>
     <form>
-
+        <ul id="accordion-38">
+            <li class="accordion">
+                <h2 id="accordion-1">First option</h2>
+                <p style="display: none;">This is the first content block</p>
+            </li>
+            <li class="accordion">
+                <h2 id="accordion-2">Second option</h2>
+                <p style="display: none;">This is the second content block</p>
+            </li>
+            <li class="accordion">
+                <h2 id="accordion-3">Third option</h2>
+                <p  style="display: none;">This is the third content block</p>
+            </li>
+        </ul>
     </form>
 </body>
 </html>
